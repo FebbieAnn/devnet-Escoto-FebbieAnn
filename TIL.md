@@ -7,3 +7,4 @@ anytime, not just during formal lessons.
 ## Example (delete this once you add your own)
 - Learned that a function with no `return` still gives back `None`,
   not nothing.
+
