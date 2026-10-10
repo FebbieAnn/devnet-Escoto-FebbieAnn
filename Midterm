@@ -1,0 +1,55 @@
+"""
+Midterm Practical Exam — Network Device Inventory Tool
+Student: [Febbie Ann Escoto]
+"""
+
+
+devices = []  # starts empty — the user adds devices as the program runs
+
+def display_menu():
+    # print the menu, return the user's choice  
+    print("Choose an option:")
+    print("1. Add a device")
+    print("2. View all devices")
+    print("3. Count Active vs Inactive devices")
+    print("4. Find a device by name")
+    print("5. Exit")
+    input("Choose an option:")
+    
+
+def add_device(device_list):
+    # ask for name, IP, status — build the string, add to the list
+    name = input("Enter device name: ")
+    ip_address = input("Enter device IP: ")
+    status = input("Enter device status (e.g., Online/Offline): ")
+    device_string = (f"Name: {name}IP: {ip_address}Status: {status}")
+    device_list.append(device_string)
+    return("Device {name} added successfully!")
+
+def view_devices(device_list):
+    # loop through and print every device — handle empty list
+
+    pass
+
+def count_active_inactive(device_list):
+    # loop through, count Active vs Inactive, return both
+    pass
+
+def find_device(device_list):
+    # ask for a name, search the list, print result or "not found"
+    pass
+
+# BONUS (optional)
+def remove_device(device_list):
+    # your code here
+    pass
+
+def main():
+    running = True
+    while running:
+        choice = display_menu()
+        
+        # use if/elif to call the right function based on choice
+        # set running = False when the user picks Exit
+
+main()
