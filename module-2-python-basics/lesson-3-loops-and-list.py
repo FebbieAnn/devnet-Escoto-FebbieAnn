@@ -30,30 +30,21 @@ came up with yourself — not copied from class.
 """
 
 # --- your code example goes here ---
-time_study = [2.5, 2.9, 3.4, 5.5, 9.9]
-total_time = 0
+scores = [85, 72, 90, 660, 95, 48]
 
+total = 0
+passing = 0
 
-for day_num, hours in enumerate(time_study, start=1): #start to 1
-    total_time += hours
-    if hours >= 3.0:
-        status = "Great job!"
-    elif hours > 0:
-        status = "Good effort."
-    else:
-        status = "Rest day."
-    print(f"Day {day_num}: {hours} hrs - {status}")
+for score in scores:
+    total += score
 
-print(f"\nTotal Hours Studied: {total_hours} hrs")
+    if score >= 75:
+        passing += 1
+Average = total/len(scores)
 
-# Using a while loop as a countdown timer
-timer = 3
-print("\nStarting quiz in:")
-while timer > 0:
-    print(f"{timer}...")
-    timer -= 1  # Decrement timer so the loop eventually stops!
-print("Begin!")
-
+print(f"Total: {total}")
+print(f"Average: {Average}")
+print(f"Passing Scores: {score}")
 
 
 """
@@ -62,7 +53,10 @@ A MISTAKE I MADE (or one I want to avoid)
 ============================================
 [what's something confusing or easy to get wrong
 about this topic?]
-
+I sometimes get confused about how loops work with lists, especially when to use variables like total
+and passing. I also tend to make mistakes when using len() and choosing the correct variable to
+display in the output. To avoid these mistakes, I need to practice tracing the loop step by step and 
+understand the purpose of each variable and where to use it.
 
 ============================================
 HOW THIS CONNECTS TO SOMETHING ELSE
